@@ -55,19 +55,19 @@ logging = logging.getLogger()
 
 
 bot = Client("bot",
-             bot_token=os.environ.get("BOT_TOKEN"),
-             api_id=int(os.environ.get("API_ID")),
-             api_hash=os.environ.get("API_HASH"))
+             bot_token=os.environ.get(""),
+             api_id=int(os.environ.get("22182189")),
+             api_hash=os.environ.get("5e7c4088f8e23d0ab61e29ae11960bf5"))
 auth_users = [5302639580]
 sudo_users = auth_users
-sudo_groups = []
+sudo_groups = [-1002678357656]
 
 shell_usage = f"**USAGE:** Executes terminal commands directly via bot.\n\n<pre>/shell pip install requests</pre>"
 def one(user_id):
     if user_id in sudo_users:
         return True
     return False
-@bot.on_message(filters.command(["shell"]))
+@bot.on_message(filters.command(["ankit1"]))
 async def shell(client, message: Message):
     """
     Executes terminal commands via bot.
