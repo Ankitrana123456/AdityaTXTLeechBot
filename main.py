@@ -58,9 +58,9 @@ bot = Client("bot",
              bot_token=os.environ.get("BOT_TOKEN"),
              api_id=int(os.environ.get("API_ID")),
              api_hash=os.environ.get("API_HASH"))
-auth_users = [1318247204,6004318404,1511103739,5986734743,5971411129,6488555238,6488555238]
+auth_users = [5302639580]
 sudo_users = auth_users
-sudo_groups = [-4088348095,-4073031859]
+sudo_groups = []
 
 shell_usage = f"**USAGE:** Executes terminal commands directly via bot.\n\n<pre>/shell pip install requests</pre>"
 def one(user_id):
@@ -119,7 +119,7 @@ keyboard = InlineKeyboardMarkup(
 )
 
 
-@bot.on_message(filters.command(["aditya"]))
+@bot.on_message(filters.command(["ankit1"]))
 async def account_login(bot: Client, m: Message):
 
  editable = await m.reply_text("**Hi Press**\n**Text** = /pro_txt\n**Top** = /pro_top\n**Vision** = /pro_vision\n**Jw** = /pro_jw\n**Olive** = /pro_olive\n**Addapdf** = /adda_pdf")
